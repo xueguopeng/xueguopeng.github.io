@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>模仿百度搜索</title>
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>华南师范大学软件学院202工作室常用网站</title>
     <style>
         /* 重置默认样式 */
         body, h1, h2, p, ul, li {
@@ -96,11 +99,11 @@
 </head>
 <body>
     <header>
-        <h1>模仿百度搜索</h1>
+        <h1>华南师范大学软件学院202工作室常用网站</h1>
     </header>
 
     <form action="https://www.baidu.com/s" method="get" onsubmit="return false;">
-        <input type="text" id="searchInput" name="wd" placeholder="搜索">
+        <input type="text" id="searchInput" name="wd" placeholder="请输入您要搜索的网站">
         <input type="button" onclick="searchList()" value="站内搜索">
         <input type="submit" value="站外搜索">
     </form>
@@ -111,7 +114,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2023 模仿百度搜索</p>
+        <p>&copy;版权所有 如有需要 请点击此处联系作者： <a href="tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=2043928998&website=www.oicqzone.com">薛国鹏</a> </p>
     </footer>
 
     <script>
@@ -122,36 +125,34 @@
 
             fetch('https://www.xueguopeng.top/data.json')
             .then(response => response.json())
-            .then(data => {
-                print(data);
+            .then(jsonData => {
+
+                var searchResults =  [];
+                var valResults =  [];
+
+                for (const key in jsonData) {
+                    if (jsonData.hasOwnProperty(key)) {
+                        const value = jsonData[key];
+                        searchResults.push(key);
+                        valResults.push(value);
+                        // console.log(`${key}: ${value}`);
+                    }
+                }
+
+                // console.log(searchList);
+
+                var ul = document.getElementById('searchResults');
+
+                for (var i = 0; i < searchResults.length; i++) {
+                    var li = document.createElement('li');
+                    var a = document.createElement('a');
+                    a.href = valResults[i];
+                    a.textContent = searchResults[i];
+                    li.appendChild(a);
+                    ul.appendChild(li);
+                }
             })
             .catch(error => console.error(error));
-
-            var searchResults = [
-                '搜索结果1',
-                '搜索结果2',
-                '搜索结果3',
-                '搜索结果4',
-                '搜索结果5',
-                '搜索结果6',
-                '搜索结果7',
-                '搜索结果8',
-                '搜索结果9',
-                '搜索结果10',
-                '搜索结果11',
-                '搜索结果12'
-            ];
-
-            var ul = document.getElementById('searchResults');
-
-            for (var i = 0; i < searchResults.length; i++) {
-                var li = document.createElement('li');
-                var a = document.createElement('a');
-                a.href = '#';
-                a.textContent = searchResults[i];
-                li.appendChild(a);
-                ul.appendChild(li);
-            }
         });
 
         function searchList() {
