@@ -1,5 +1,22 @@
 {
-    "name": "www.baidu.com",
-    "age": "www.baidu.com",
-    "city": "www.baidu.com"
+    "服务器内网网址": "https://218.192.110.153",
+    "服务器外网地址": "https://auth3.scnu.edu.cn",
+    "软件学院OJ系统": "https://oj.socoding.cn/",
+    "学者网": "https://www.scholat.com/",
+    "砺儒云课堂": "https://moodle.scnu.edu.cn/",
+    "学堂在线": "https://neice.yuketang.cn/pro/portal/home/",
+    "隐语框架文档": "https://www.secretflow.org.cn/docs",
+    "图书馆网站": "https://lib.scnu.edu.cn/",
+    "中国知网": "https://www.cnki.net/",
+    "谷歌学术": "https://xs.scqylaw.com/",
+    "webofscience": "https://www.webofscience.com/wos/",
+    "paperswithcode": "https://paperswithcode.com/",
+    "chat-GPT": "https://chat.openai.com/",
+    "matlab网页版": "https://matlab.mathworks.com/",
+    "github": "https://github.com/",
+    "gitee": "https://gitee.com/",
+    "yolov8官网文档": "https://docs.ultralytics.com/",
+    "学校邮箱系统": "https://mail.scnu.edu.cn/",
+    "小绿鲸网页版": "https://www.xljsci.com/editor/",
+    "专利查询": "https://www.cnipa.gov.cn/"
 }
