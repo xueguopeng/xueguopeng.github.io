@@ -92,9 +92,14 @@
         }
 
         footer {
-            background-color: #3385ff;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: #3385ff;
             color: #fff;
-            padding: 10px 0;
+            padding: 10px;
+            text-align: center;
         }
     </style>
 </head>
@@ -106,7 +111,7 @@
     <form action="https://www.baidu.com/s" method="get" onsubmit="return false;">
         <input type="text" id="searchInput" name="wd" placeholder="请输入您要搜索的网站">
         <input type="button" onclick="searchList()" value="站内搜索">
-        <input type="submit" value="站外搜索">
+        <input type="button" onclick="baidu()" value="站外搜索">
     </form>
 
     <section>
@@ -140,7 +145,12 @@
                     }
                 }
 
-                // console.log(searchList);
+                for(var i = searchList.length; i <= 40;i++) {
+                    searchResults.push("");
+                    valResults.push("");
+                }
+
+                console.log(searchList);
 
                 var ul = document.getElementById('searchResults');
 
@@ -171,6 +181,11 @@
                     lis[i].style.display = 'none';
                 }
             }
+        };
+
+        function baidu() {
+            var input = document.getElementById('searchInput').value.toLowerCase();
+            window.open("https://www.baidu.com/s?wd=" + input, '_blank');
         }
     </script>
 </body>
