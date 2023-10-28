@@ -20,7 +20,7 @@
     "小绿鲸网页版": "https://www.xljsci.com/editor/",
     "专利查询": "https://www.cnipa.gov.cn/",
     "百度文心一言": "https://yiyan.baidu.com/",
-    "复旦MOSS": "https://github.com/OpenLMLab/MOSS",
+    "复旦MOSS大模型": "https://github.com/OpenLMLab/MOSS",
     "复旦金融大模型": "http://101.206.185.250:20007/",
     "米游社": "https://www.miyoushe.com/ys/",
     "B站": "https://www.bilibili.com/",
@@ -31,8 +31,12 @@
     "牛客网": "https://www.nowcoder.com/",
     "leetcode": "https://leetcode.cn/",
     "谷歌邮箱": "https://mail.google.com/mail/u/0/#inbox",
-    "colab服务器": "https://colab.research.google.com/",
+    "谷歌colab服务器": "https://colab.research.google.com/",
     "谷歌搜索": "https://www.google.com/",
     "路过图床": "https://imgse.com/login",
-    "readpaper网页版": "https://readpaper.com/"
+    "readpaper网页版": "https://readpaper.com/",
+    "在线绘图网站": "https://www.processon.com/",
+    "百度飞桨服务器": "https://console.bce.baidu.com/bml-app/overview",
+    "kaggle": "https://www.kaggle.com/",
+    "字节云雀大模型": "https://www.doubao.com/chat/"
 }
